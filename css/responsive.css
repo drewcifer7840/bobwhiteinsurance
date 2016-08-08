@@ -1,0 +1,48 @@
+/* breakpoint styles above a certain width -- under 544 px assumed as normal styles as per mobile first construction. */
+@media (min-width: 544px) {
+	
+}
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 992px) {
+	
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/* more strict responsive breakpoint styling targeting specific range(s) */
+
+
+@media (min-width: 544px) and (max-width: 767px) {
+	#one blockquote {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 20px;
+	font-style: italic;
+	border-left:none;
+	color: red;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 544px) {
+	#one img {display: block; margin: 0 auto; border: 2px solid green;}
+}
+
+
