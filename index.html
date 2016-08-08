@@ -12,11 +12,10 @@
    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-	<script src="http://maps.google.com/maps/api/js"></script>
-  <script src="js/gmaps.js"></script>
+
 	<style>
 		#map {
       width: 100%;
@@ -26,31 +25,31 @@
 		height: 52px;
 		width: 157px;
 		background-size: 157px 52px;
-		
+
 		background-image:
 			url('img/logo-small.png');
 		}
-		
+
 		#mainnavdropdown {
 			font-size: .75rem;
 		}
-		
+
 		#mainnavdropdown.dropdown-menu {
 			min-width: 125px;
 		}
-		
+
 		#mainnavdropdown .dropdown-item {
 			color:#007fff;
 		}
-		
+
 	#first {
 		padding-top:100px;
 		text-align:left;
 	}
 	#first {
 		padding-top:50px;
-		
-	
+
+
 	}
 	#first h4 {
 		text-align:center;
@@ -66,7 +65,7 @@
 		float:left;
 		margin:10px;
 	}
-	
+
 	#first {
 		padding-top:100px;
 	}
@@ -86,7 +85,7 @@
 	</style>
 </head>
 <body class="bg-faded">
-  
+
 <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
@@ -126,15 +125,15 @@
 		</div>
 	</div>
 </nav>
-	
+
 <header id="first">
     <div class="container">
 		<div class="row">
 			<div class="col-md-8">
-				
+
 				<h4>Are Insurance Brokers Secretly SUPER AGENTS?</h4>
-				
-				
+
+
 				<img id="superbob" src="img/bobwhite-america-236x300.jpg">
 				<p>Here’s a little secret insurance agents would prefer you didn’t know. You’ll almost ALWAYS save money by shopping around for a better deal. But where do you start? Who can you TRUST?</p>
 				<p>Independent insurance brokers aren’t stuck working for a single company. Instead, working for you, they comparatively shop rates from over a dozen or more insurance companies with the simple goal of saving you money.</p>
@@ -143,8 +142,8 @@
 			</div>
 			<div class="col-md-4">
 				<a target="_blank" title="Bob White Insurance Agency BBB Business Review" href="http://www.bbb.org/upstate-new-york/business-reviews/insurance-agency/bob-white-insurance-agency-in-amherst-ny-235982016/#bbbonlineclick"><img alt="Bob White Insurance Agency BBB Business Review" style="border: 0;" src="http://seal-upstateny.bbb.org/seals/blue-seal-293-61-bob-white-insurance-agency-235982016.png" /></a>
-				<div id="map"></div>
-				
+
+
 			</div>
 		</div>
 	</div>
@@ -156,7 +155,7 @@
 <section id="one">
 	<div class="container">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			
+
 			<div class="carousel-inner" role="listbox">
 				<div class="carousel-item active">
 					<div class="row">
@@ -207,18 +206,18 @@
 	</div>
 </section>
 <section id="two" class="bg-alt">
-   
+
 </section>
 <section id="three">
-   
+
 </section>
 
 <section id="four">
-   
+
 </section>
 
 <section id="last">
-   
+
 </section>
 <footer id="footer">
     <div class="container">
@@ -315,86 +314,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="js/scripts.js"></script>
-	<script>
-    (function(){
 
-	var map;
-
-	map = new GMaps({
-		el: '#map',
-		lat: 35.48062,
-		lng: -80.86033,
-		scrollwheel:false,
-		zoom: 16,
-		zoomControl : false,
-		panControl : false,
-		streetViewControl : false,
-		mapTypeControl: false,
-		overviewMapControl: false,
-		clickable: false
-	});
-
-	var image = 'img/map-icon.png';
-	map.addMarker({
-		lat: 35.48062,
-		lng: -80.86033,
-		icon: image,
-		animation: google.maps.Animation.DROP,
-		verticalAlign: 'bottom',
-		horizontalAlign: 'center',
-		backgroundColor: '#3e8bff',
-	});
-
-
-	var styles = [ 
-
-	{
-		"featureType": "road",
-		"stylers": [
-		{ "color": "#b4b4b4" }
-		]
-	},{
-		"featureType": "water",
-		"stylers": [
-		{ "color": "#d8d8d8" }
-		]
-	},{
-		"featureType": "landscape",
-		"stylers": [
-		{ "color": "#f1f1f1" }
-		]
-	},{
-		"elementType": "labels.text.fill",
-		"stylers": [
-		{ "color": "#000000" }
-		]
-	},{
-		"featureType": "poi",
-		"stylers": [
-		{ "color": "#d9d9d9" }
-		]
-	},{
-		"elementType": "labels.text",
-		"stylers": [
-		{ "saturation": 1 },
-		{ "weight": 0.1 },
-		{ "color": "#000000" }
-		]
-	}
-
-	];
-
-	map.addStyle({
-		styledMapName:"Styled Map",
-		styles: styles,
-		mapTypeId: "map_style"  
-	});
-
-	map.setStyle("map_style");
-}());
-  </script>
-  <script>
-  
-  </script>
   </body>
 </html>
